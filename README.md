@@ -9,4 +9,5 @@
 [22.04.17] ~ 2.2.2 리눅스의 기본 명령어  
 [22.04.20] ~ 3. 라즈베리 파이와 GPIO: 하드웨어 제어  
 [22.04.21] <a href="https://www.notion.so/Study-22-04-21-16ad1a7214234d33a969b66f2f91b738" target="_blank">Study[22.04.21]</a>   
-[22.05.10] 3. 라즈베리 파이와 GPIO: 하드웨어 제어
+[22.05.10] 3. 라즈베리 파이와 GPIO: 하드웨어 제어  
+[22.05.18] <a href="https://www.notion.so/Study-22-05-18-2dee6806840f440eadff124175628c80" target="_blank">Study[22.05.18]</a>   
