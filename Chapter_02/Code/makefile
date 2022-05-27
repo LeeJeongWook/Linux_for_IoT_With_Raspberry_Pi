@@ -1,11 +1,14 @@
-test : main.o print.o input.o
-	gcc -o test main.c print.c input.c
+OBJECTS = main.o print.o input.o
+SRCS = main.c print.c input.c
+CFLAGS = -g
+TARGET = test
+
+$(TARGET) : $(OBJECTS) 
+	$(CC) -o $(TARGET) $(OBJECTS)
+
+clean :
+	rm -f $(OBJECTS) $(TARGET) core
 
 main.o : main.c common.h
-	gcc -c main.c
-
 print.o : print.c common.h
-	gcc -c print.c
-
 input.o : input.c common.h
-	gcc -c input.c
