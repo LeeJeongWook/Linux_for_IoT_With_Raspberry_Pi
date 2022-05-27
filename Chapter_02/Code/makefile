@@ -1,13 +1,22 @@
-OBJECTS = main.o print.o input.o
-SRCS = main.c print.c input.c
-CFLAGS = -g
-TARGET = test
+#makefile
+.SUFFIXES : .c .o
 
-$(TARGET) : $(OBJECTS) 
-	$(CC) -o $(TARGET) $(OBJECTS)
+OBJECTS = main.o print.o input.o
+SRCS = $(OBJECTS:.o:.c)
+
+CC = gcc
+CFLAGS = -g
+TARGET = test helloworld
+
+all : $(TARGET)
+helloworld : helloworld.c
+	$(CC) -o $@ $<
+
+test : $(OBJECTS) 
+	$(CC) -o $@ $(OBJECTS)
 
 clean :
-	rm -f $(OBJECTS) $(TARGET) core
+	$(RM) $(OBJECTS) $(TARGET) helloworld.o core
 
 main.o : main.c common.h
 print.o : print.c common.h
