@@ -6,3 +6,7 @@
 
 int ledControl(int gpio)
 {
+	int df;
+	char buf[BUFSIZ];
+
+	fd = open
