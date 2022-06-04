@@ -7,6 +7,8 @@
 int ledControl(int gpio)
 {
 	int fd;
+	char buf[BUFSIZ];
+
 	fd = open("/sys/class/gpio/export", O_WRONLY);				/* 해당 GPIO 디바이스 사용 준비 */
 	sprintf(buf, "%d", gpio);
 	write(fd, buf, strlen(buf));
@@ -20,13 +22,13 @@ int ledControl(int gpio)
 
 	sprintf(buf, "/sys/class/gpio/gpio%d/value", gpio);			/* 디바이스에 값 출력 */
 	fd = open(buf, O_WRONLY);
-	wrtie(fd, "1", 2);
+	write(fd, "1", 2);
 	close(fd);
 
 	getchar();					/* LED확인을 위한 대기 */
 
 	fd = open("/sys/class/gpio/unexport", O_WRONLY);			/* 사용한 GPIO 디바이스 해제하기 */
-	sprintf(buf, %d, gpio);
+	sprintf(buf, "%d", gpio);
 	write(fd, buf, strlen(buf));
 	close(fd);
 
