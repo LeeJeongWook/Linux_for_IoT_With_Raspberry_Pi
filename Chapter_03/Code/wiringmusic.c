@@ -17,7 +17,7 @@ int musicPlay(){
 
 	for (i = 0; i < TOTAL; ++i){
 		softToneWrite(SPKR, notes[i]);
-		delay(280);
+		delay(600);
 	}
 
 	return 0;
