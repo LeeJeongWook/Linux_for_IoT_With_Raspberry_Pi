@@ -16,4 +16,12 @@ int fndControl(int num)
 			  			  {0,1,1,1}, 	/* 7 */
 			  			  {1,0,0,0}, 	/* 8 */
 			 			  {1,0,0,1} }; 	/* 9 */
-	for (i = 0; i < 4; i++)
+	for (i = 0; i < 4; i++){
+		pinMode(gpiuopins[i], OUTPUT);
+	}
+
+	for (i = 0; i < 4; i++){
+		digitalWrite(gpiopins[i], number[num][i]?HIGH:LOW);
+	}
+	getchar(); //숫자 표시 대기
+
