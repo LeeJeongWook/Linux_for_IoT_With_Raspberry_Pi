@@ -24,4 +24,25 @@ int fndControl(int num)
 		digitalWrite(gpiopins[i], number[num][i]?HIGH:LOW);
 	}
 	getchar(); //숫자 표시 대기
+	
+	for(in i = 0; i < 4; i++){
+		digitalWrite(gpiopins[i], HIGH);
+	}
 
+	return 0;
+}
+
+int main(int argc, char **argv)
+{
+	int no;
+
+	if(argc < 2){
+		printf("Usage : %s NO\n", argv[0]);
+		return -1;
+	}
+	no = atoi(argv[1]);
+	wiringPiSetup();
+	fndControl(no);
+
+	return 0;
+}
