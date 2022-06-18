@@ -17,7 +17,7 @@ int fndControl(int num)
 			  			  {1,0,0,0}, 	/* 8 */
 			 			  {1,0,0,1} }; 	/* 9 */
 	for (i = 0; i < 4; i++){
-		pinMode(gpiuopins[i], OUTPUT);
+		pinMode(gpiopins[i], OUTPUT);
 	}
 
 	for (i = 0; i < 4; i++){
@@ -25,7 +25,7 @@ int fndControl(int num)
 	}
 	getchar(); //숫자 표시 대기
 	
-	for(in i = 0; i < 4; i++){
+	for(int i = 0; i < 4; i++){
 		digitalWrite(gpiopins[i], HIGH);
 	}
 
