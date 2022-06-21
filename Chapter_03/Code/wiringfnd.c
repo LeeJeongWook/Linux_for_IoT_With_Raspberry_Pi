@@ -34,7 +34,7 @@ int fndControl(int num)
 
 int main(int argc, char **argv)
 {
-	int no;
+	int no, i;
 
 	if(argc < 2){
 		printf("Usage : %s NO\n", argv[0]);
@@ -42,7 +42,9 @@ int main(int argc, char **argv)
 	}
 	no = atoi(argv[1]);
 	wiringPiSetup();
-	fndControl(no);
+	for(i = no; i > 0; i--){
+		fndControl(i);
+	}
 
 	return 0;
 }
