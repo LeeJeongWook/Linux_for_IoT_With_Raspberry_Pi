@@ -14,4 +14,4 @@
 [22.05.29] <a href="https://www.notion.so/Study-22-05-18-2dee6806840f440eadff124175628c80" target="_blank">Study[22.05.29]</a>  
 [22.06.12] <a href="https://www.notion.so/Study-22-06-12-291cb69c7df9422a82b73324e34736dc" target="_blank">Study[22.06.12]</a>  
 [22.06.15] <a href="https://www.notion.so/Study-22-06-15-cda0330d3e00440392c2b4bc17cbc500" target="_blank">Study[22.06.15]</a>  
-  
+[22.06.22] <a href="https://www.notion.so/Study-22-06-22-241d733e70c540769ff55c4ee0fd551b" target="_blank">Study[22.06.22]</a>  
